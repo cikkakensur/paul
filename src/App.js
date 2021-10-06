@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import MyButton from './components/MyButton/MyButton';
+import MyButtonClass from './components/MyButton/MyButtonClass';
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <MyButton className={"success"}> I am Button Success </MyButton>
+     <MyButton className={"danger"}> I am Button Danger </MyButton>
+     <MyButton className={"primary"}> I am Button Primary </MyButton>
+     <MyButton className={"secondary"}> I am Button Secondary </MyButton>
+     <MyButton className={"warning"}> I am Button Warning </MyButton>
     </div>
   );
 }
